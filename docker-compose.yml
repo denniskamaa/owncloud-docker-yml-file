@@ -9,7 +9,7 @@ services:
   database:
     image: mariadb
     environment:
-      - MYSQL_ROOT_PASSWORD=17/04162Dk
+      - MYSQL_ROOT_PASSWORD=example_123
 
   www:
     image: phpmyadmin
