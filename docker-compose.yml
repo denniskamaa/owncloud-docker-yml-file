@@ -11,7 +11,7 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=example_123
 
-  www:
+  check-db:
     image: phpmyadmin
     ports:
       - "82:80"
