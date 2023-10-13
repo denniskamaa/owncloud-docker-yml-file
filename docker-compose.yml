@@ -12,8 +12,10 @@ services:
       - MYSQL_ROOT_PASSWORD=example_123
 
   check-db:
-    image: phpmyadmin
-    ports:
-      - "82:80"
-    environment:
-      - PMA_ARBITRARY=1
+	image:mysql:latest
+	ports:
+	 - "3308:3306"
+	enviroment:
+	 - MYSQL_ROOT_PASSWORD=example_123
+	 - MYSQL_ROOT_USER=root
+	 - MYSQL_USER=User
